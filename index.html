@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
 
 
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid p-3">
+  <div class="row-flex">
+    <nav class="navbar navbar-expand-lg position-fixed col-12">
+        <div class="container-fluid p-2">
           <a class="logo">Inocando</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item mx-3 ">
                 <a class="nav-link"href="#Home">Home</a>
               </li>
@@ -39,7 +41,39 @@
       </nav>
 
 
-      <section id="Home">Home</section>
+      <section id="Home">
+        <div class="container text-center">
+          <div class="row align-items-center .flex-column">
+            <div class="col">
+              <div class="profile-container m-5">
+                <img src="assets/images/jam.jpg" alt="sadasd">
+              </div>
+            </div>
+              <div class="col-lg-6 text-lg-start text-center">
+                  <div class="row">
+                    <h1 class="intro-1">Hi, it's <span class="intro-name">Jamier</span> </h1>
+                  </div>
+                  <div class="row">
+                    <h2 class="intro-2">i'm a <span></span> </h2>
+                  </div>
+                  <div class="row">
+                    <p>Hello there! I'm a computer engineering and programming enthusiast on a journey of learning and exploration in the fascinating world of technology. Currently a student, I aim to learn and apply my skills effectively. I want to gain practical experience in both software and hardware aspects, contributing to projects and staying informed about the latest advancements in the field.</p>
+                  </div>
+                  <div class="row">
+                    <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="#"><i class="fa-brands fa-github"></i></a>
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                  </div>
+                  <div class="row mt-0">
+                    <div><a href="#" class="btn">Hire me</a></div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="Service">Service</section>
       <section id="Education">Education</section>
       <section id="Projects">Projects</section>
@@ -49,8 +83,10 @@
 
 
     
-    <footer></footer>
-   
+      <footer class="footer-panel text-center p-3 ">
+       <p class="footer-text">© 2025 Inocando Portfolio</p>
+      </footer>
+    </div>
     <script src="assets/bootstrap/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
 </body>
