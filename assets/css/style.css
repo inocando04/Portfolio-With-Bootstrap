@@ -74,7 +74,7 @@ html,body{
 section{
     color: white;
     align-items: center;
-    height: 100vh;
+    height: 140vh;
     padding-top: 90px;
 }
 
@@ -177,17 +177,21 @@ img{
   }
   
   .robot_container {
-    height: 88vh;
-    width: 100vw;
+    width: 100%;
+
   }
 
-  .robot_container spline-viewer{
-    
-    width: 60vw;
+  .robot-column {
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+
   .service_content {
     height:88vh; 
-    
+    align-items: center;
   }
   .service-description{
     font-size: 15px;
@@ -199,6 +203,7 @@ img{
   }
 
   .text-container{
+    margin-left:5%;
     padding: 10px;
     min-height: 20vh;
     width: 80%;
