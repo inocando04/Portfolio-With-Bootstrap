@@ -1,4 +1,4 @@
-
+// navigation active color
   // Wait for the document to load before running the script
   document.addEventListener('DOMContentLoaded', function() {
     // Get all nav-links
@@ -15,3 +15,20 @@
       });
     });
   });
+
+
+// robot spline watermark remover
+
+window.onload = function() {
+  var splineElement = document.querySelectorAll('spline-viewer');
+  
+  for (let pas = 0; pas < splineElement.length; pas++) {
+    var shadowRoot = splineElement[pas].shadowRoot;
+    shadowRoot.querySelector('#logo').remove();
+  }
+}
+
+
+
+
+  
