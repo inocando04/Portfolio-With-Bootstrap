@@ -18,13 +18,16 @@ html,body{
     height: 100%;
     margin: 0;
     background-color: black;
+    scroll-padding-top: 50px
 }
 
 
 
 
 .navbar{
-    background-color: black;
+    z-index:1;
+    backdrop-filter: blur(10px);
+    background-color: #16161662;
 }
 
 
@@ -59,7 +62,6 @@ html,body{
 }
 
 .nav-link:hover , .nav-link.active{
-    border-bottom: 3px solid #02d04a;
     color: #02d04a !important;
 }
 
@@ -76,17 +78,14 @@ section{
     padding-top: 90px;
 }
 
-.profile-container{
-  
-    border: 2px solid red;
 
-}
 
 img{
     max-width: 30vw;
     border-radius: 50%;
     
 }
+
 
 
 .btn{
@@ -141,6 +140,7 @@ img{
 
 
 
+
 .intro-2 span::before{
     content: "software Developer";
     color: #02d04a;
@@ -156,6 +156,74 @@ img{
     right: -8;
     animation: cursor 0.6s infinite;
 }
+
+@media (max-width: 991.98px) { /* Bootstrap's lg breakpoint */
+    #navbarSupportedContent .nav-link {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.4s ease, transform 0.6s ease;
+    }
+  
+    #navbarSupportedContent.show .nav-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .service_container {
+    min-height: 88vh; 
+    z-index: 0;
+  }
+  
+  .robot_container {
+    height: 88vh;
+    width: 100vw;
+  }
+
+  .robot_container spline-viewer{
+    
+    width: 60vw;
+  }
+  .service_content {
+    height:88vh; 
+    
+  }
+  .service-description{
+    font-size: 15px;
+    cursor: default;
+  }
+  .service-title{
+    font-size: 20px;
+    color:#02d04a;
+  }
+
+  .text-container{
+    padding: 10px;
+    min-height: 20vh;
+    width: 80%;
+    text-align: center;
+    border: 2px solid rgb(0, 161, 0);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.089), rgba(255, 255, 255, 0.247));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px);
+    border:1px solid rgba(255, 255, 255, 0.18); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+  }
+
+  .text-container:hover{
+    width:82%;
+    transform: scale3d(1.03);
+    background-color:#02d04a;
+    color: black;
+    box-shadow: 0 0 25px #02d04a;
+ }
+
+ .text-container:hover .service-title {
+    font-size: 20px;
+    color: #000000;
+  }
 
 @keyframes cursor{
     to{
@@ -180,3 +248,6 @@ img{
         content: "Developer";
     }
 }
+
+
+  
