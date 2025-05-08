@@ -19,14 +19,23 @@
 
 // robot spline watermark remover
 
-window.onload = function() {
-  var splineElement = document.querySelectorAll('spline-viewer');
-  
-  for (let pas = 0; pas < splineElement.length; pas++) {
-    var shadowRoot = splineElement[pas].shadowRoot;
-    shadowRoot.querySelector('#logo').remove();
-  }
-}
+(() => {
+  const interval = setInterval(() => {
+    try {
+      const viewer = document.querySelector('spline-viewer');
+      if (viewer && viewer.shadowRoot) {
+        const logo = viewer.shadowRoot.querySelector('#logo');
+        if (logo) {
+          logo.remove();
+          console.log("Logo removed!");
+          clearInterval(interval);
+        }
+      }
+    } catch (e) {
+      console.error("Error removing logo:", e);
+    }
+  }, 500);
+})();
 
 
 
