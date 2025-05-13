@@ -197,10 +197,7 @@ img{
     font-size: 15px;
     cursor: default;
   }
-  .service-title{
-    font-size: 20px;
-    color:#02d04a;
-  }
+
 
   .text-container{
     margin-left:5%;
@@ -225,7 +222,7 @@ img{
     box-shadow: 0 0 25px #02d04a;
  }
 
- .text-container:hover .service-title {
+ .text-container:hover{
     font-size: 20px;
     color: #000000;
   }
@@ -254,5 +251,40 @@ img{
     }
 }
 
-
+@media (max-width: 767.98px) {
+  .robot-column,
+  .service_content {
+    height: auto !important;
+    min-height: unset !important;
+    display: block !important;
+    margin-bottom: 2rem !important;
+  }
+  section {
+    height: auto !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
   
+  
+}
+
+.service-title {
+  color: #02d04a !important;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
