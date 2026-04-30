@@ -40,6 +40,58 @@
 
 
 
+const images = {
+  project1: [
+    "assets/images/brochure.png",
+    "assets/images/brochure2.png",
+  ],
+  project2: [
+    "assets/images/FRONT.png",
+    "assets/images/BACK.png",
+    "assets/images/SAMPLE.png",
+  ],
+  project3: [
+    "assets/images/fish.jpg",
+  ],
+  project4: [
+    "assets/images/megamind.jpeg",
+  ],
+  project5: [
+    "assets/images/robot.jpg",
+  ],
+  project6: [
+    "assets/images/sdad.png",
+  ],
+  project7: [
+    "assets/images/webdesign.jpg",
+  ],
+  project8: [
+    "assets/images/woman.jpg",
+  ],
+  project9: [
+    "assets/images/jesus.png",
+  ],
+};
+
+
+
+
+function openGallery(project, index) {
+  const container = document.getElementById("galleryImages");
+  container.innerHTML = "";
+
+  images[project].forEach((img, i) => {
+    container.innerHTML += `
+      <div class="carousel-item ${i === index ? 'active' : ''} h-100">
+        <img src="${img}" class="w-100 h-100" style="object-fit: contain;">
+      </div>
+    `;
+  });
+
+  
+
+  new bootstrap.Modal(document.getElementById('galleryModal')).show();
+}
 
 
 
